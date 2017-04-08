@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-08T05:36:12.895Z</updated>
+  <updated>2017-04-08T05:57:17.885Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/04/08/Test_Fun/"/>
     <id>http://yoursite.com/2017/04/08/Test_Fun/</id>
     <published>2017-04-08T04:57:35.000Z</published>
-    <updated>2017-04-08T05:36:12.895Z</updated>
+    <updated>2017-04-08T05:57:17.885Z</updated>
     
     <content type="html"><![CDATA[<h1 id="javascript编写测试"><a href="#javascript编写测试" class="headerlink" title="javascript编写测试"></a>javascript编写测试</h1><p><code>var a = function(){  
     return 1;
@@ -35,6 +35,7 @@
         count[i] = i;  
     }   
     printf(&quot;第i个值为&quot;:+count[i]);</code></p>
+<h1 id="git验证权限"><a href="#git验证权限" class="headerlink" title="git验证权限"></a>git验证权限</h1><p><code>ssh -T git@github.com</code></p>
 ]]></content>
     
     <summary type="html">
