@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-08T05:57:17.885Z</updated>
+  <updated>2017-04-11T12:31:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>熟悉hexo及markdown</title>
+    <link href="http://yoursite.com/2017/04/11/%E7%86%9F%E6%82%89hexo%E5%8F%8Amarkdown/"/>
+    <id>http://yoursite.com/2017/04/11/熟悉hexo及markdown/</id>
+    <published>2017-04-11T11:02:35.000Z</published>
+    <updated>2017-04-11T12:31:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>人的一切的痛苦，本质上都是对自己无能的愤怒    </p>
+<h4 id="王小波"><a href="#王小波" class="headerlink" title="王小波"></a>王小波</h4></blockquote> 一只上海的蝴蝶煽动翅膀后，引起了厦门两个人的龙卷风。世事无常，往往事情的发展<br>    总出人意料，令人啼笑皆非。且不问结果如何，尽自己之所能，积极地面对。古语有<br>    言，尽人事听天命，大概便是如此。<br>    在岁月之巅放牧心灵，山一程，水一程，红尘、沧桑、流年、清欢，一个人的夜晚，我们终于学会了：于一杯淡泊中，笑望两个人的白月光。<br>    <img src="/uploads/images/full-image.jpg" class="full-image"><br><br><br>Vim<br>Bootstrap callout(Header 2)<br><div class="note class_name"><p>Content of bs-callout(without define class style) </p>
+</div>
+<div class="note default"><p>Content of default bs-callout </p>
+</div>
+<div class="note primary"><h2 id="Header-2-in-callout"><a href="#Header-2-in-callout" class="headerlink" title="Header 2 in callout"></a>Header 2 in callout</h2><p>Content of <strong>primary</strong> bs-callout </p>
+</div>
+<div class="note class_name"><p>Content of bs-callout(without define class style) </p>
+</div>
+<p><strong>下面是一段代码：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s =<span class="string">"Javascript syntax highlighting"</span>;</div><div class="line">alert(s);</div></pre></td></tr></table></figure></p>
+<ul>
+<li>haha</li>
+<li>list</li>
+<li>list1</li>
+</ul>
+<ol>
+<li>hello</li>
+<li>hello</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">int i=1;</div></pre></td></tr></table></figure>
+<p><a href="http://baidu.com" target="_blank" rel="external">百度</a><br><a href="http://baidu.com" target="_blank" rel="external">新浪</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;人的一切的痛苦，本质上都是对自己无能的愤怒    &lt;/p&gt;
+&lt;h4 id=&quot;王小波&quot;&gt;&lt;a href=&quot;#王小波&quot; class=&quot;headerlink&quot; title=&quot;王小波&quot;&gt;&lt;/a&gt;王小波&lt;/h
+    
+    </summary>
+    
+      <category term="Computer Lanauages" scheme="http://yoursite.com/categories/Computer-Lanauages/"/>
+    
+    
+      <category term="tests" scheme="http://yoursite.com/tags/tests/"/>
+    
+  </entry>
   
   <entry>
     <title>编程语言瞎写</title>
