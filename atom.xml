@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-11T12:31:24.000Z</updated>
+  <updated>2017-04-13T12:11:33.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>learnNgnix</title>
+    <link href="http://yoursite.com/2017/04/13/learnNgnix/"/>
+    <id>http://yoursite.com/2017/04/13/learnNgnix/</id>
+    <published>2017-04-13T11:49:16.000Z</published>
+    <updated>2017-04-13T12:11:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Begin-to-Learn-Ngnix"><a href="#Begin-to-Learn-Ngnix" class="headerlink" title="Begin to Learn Ngnix"></a>Begin to Learn Ngnix</h1><h2 id="记录个人学习Ngnix历程"><a href="#记录个人学习Ngnix历程" class="headerlink" title="记录个人学习Ngnix历程"></a>记录个人学习Ngnix历程</h2><ol>
+<li><p>Windows下的Ngnix启动的一个问题<br>80端口可能会被占用<br>个人解决方法：<code>nginx.conf</code>中的<code>listen 80;</code>直接调整为<code>listen 9000;</code></p>
+</li>
+<li><p>目前学习到的Ngnix中的基本命令<br>查看进程  <code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code><br>安全关闭  <code>nginx -s quit</code>     </p>
+</li>
+</ol>
+<p>学习资源：<br>nginx平台初探[<a href="http://tengine.taobao.org/book/" target="_blank" rel="external">http://tengine.taobao.org/book/</a>]</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Begin-to-Learn-Ngnix&quot;&gt;&lt;a href=&quot;#Begin-to-Learn-Ngnix&quot; class=&quot;headerlink&quot; title=&quot;Begin to Learn Ngnix&quot;&gt;&lt;/a&gt;Begin to Learn Ngnix&lt;/h1&gt;&lt;
+    
+    </summary>
+    
+      <category term="Ngnix" scheme="http://yoursite.com/categories/Ngnix/"/>
+    
+    
+      <category term="Ngnix" scheme="http://yoursite.com/tags/Ngnix/"/>
+    
+  </entry>
   
   <entry>
     <title>熟悉hexo及markdown</title>
