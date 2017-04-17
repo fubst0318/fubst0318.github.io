@@ -107,18 +107,18 @@
 
 
 
-<meta name="description" content="高性能Mysql读书笔记Chapter1###　Mysql逻辑架构 存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽">
+<meta name="description" content="高性能Mysql读书笔记Chapter1Mysql逻辑架构   存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽略。">
 <meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql读书笔记">
 <meta property="og:url" content="http://yoursite.com/2017/04/17/mysql读书笔记/index.html">
 <meta property="og:site_name" content="fubst0318">
-<meta property="og:description" content="高性能Mysql读书笔记Chapter1###　Mysql逻辑架构 存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽">
+<meta property="og:description" content="高性能Mysql读书笔记Chapter1Mysql逻辑架构   存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽略。">
 <meta property="og:image" content="http://yoursite.com/uploads/images/mysql_logicstructure.png">
-<meta property="og:updated_time" content="2017-04-17T12:50:37.189Z">
+<meta property="og:updated_time" content="2017-04-17T12:57:30.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql读书笔记">
-<meta name="twitter:description" content="高性能Mysql读书笔记Chapter1###　Mysql逻辑架构 存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽">
+<meta name="twitter:description" content="高性能Mysql读书笔记Chapter1Mysql逻辑架构   存储引擎的选择 事务  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性. 备份  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽略。">
 <meta name="twitter:image" content="http://yoursite.com/uploads/images/mysql_logicstructure.png">
 
 
@@ -431,7 +431,7 @@
       
 
       
-        <h1 id="高性能Mysql读书笔记"><a href="#高性能Mysql读书笔记" class="headerlink" title="高性能Mysql读书笔记"></a>高性能Mysql读书笔记</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><p>###　Mysql逻辑架构<br><img src="/uploads/images/mysql_logicstructure.png" class="full-image"></p>
+        <h1 id="高性能Mysql读书笔记"><a href="#高性能Mysql读书笔记" class="headerlink" title="高性能Mysql读书笔记"></a>高性能Mysql读书笔记</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h3 id="Mysql逻辑架构"><a href="#Mysql逻辑架构" class="headerlink" title="Mysql逻辑架构"></a>Mysql逻辑架构</h3><p><img src="/uploads/images/mysql_logicstructure.png">  </p>
 <h3 id="存储引擎的选择"><a href="#存储引擎的选择" class="headerlink" title="存储引擎的选择"></a>存储引擎的选择</h3><ul>
 <li><strong>事务</strong><br>  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性.</li>
 <li><strong>备份</strong><br>  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽略。反之，如果需要在线热备份，那么选择InnoDB就是基本的要求.</li>
@@ -707,7 +707,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#高性能Mysql读书笔记"><span class="nav-number">1.</span> <span class="nav-text">高性能Mysql读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter1"><span class="nav-number">1.1.</span> <span class="nav-text">Chapter1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#存储引擎的选择"><span class="nav-number">1.1.1.</span> <span class="nav-text">存储引擎的选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换表的引擎"><span class="nav-number">1.1.2.</span> <span class="nav-text">转换表的引擎</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter2"><span class="nav-number">1.2.</span> <span class="nav-text">Chapter2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基准测试的策略"><span class="nav-number">1.2.1.</span> <span class="nav-text">基准测试的策略</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter3"><span class="nav-number">1.3.</span> <span class="nav-text">Chapter3</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#高性能Mysql读书笔记"><span class="nav-number">1.</span> <span class="nav-text">高性能Mysql读书笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter1"><span class="nav-number">1.1.</span> <span class="nav-text">Chapter1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mysql逻辑架构"><span class="nav-number">1.1.1.</span> <span class="nav-text">Mysql逻辑架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储引擎的选择"><span class="nav-number">1.1.2.</span> <span class="nav-text">存储引擎的选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转换表的引擎"><span class="nav-number">1.1.3.</span> <span class="nav-text">转换表的引擎</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter2"><span class="nav-number">1.2.</span> <span class="nav-text">Chapter2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基准测试的策略"><span class="nav-number">1.2.1.</span> <span class="nav-text">基准测试的策略</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter3"><span class="nav-number">1.3.</span> <span class="nav-text">Chapter3</span></a></li></ol></li></ol></div>
             
 
           </div>

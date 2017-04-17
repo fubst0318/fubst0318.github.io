@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-17T12:50:37.189Z</updated>
+  <updated>2017-04-17T12:57:30.235Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://yoursite.com/2017/04/17/mysql%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2017/04/17/mysql读书笔记/</id>
     <published>2017-04-17T11:28:47.000Z</published>
-    <updated>2017-04-17T12:50:37.189Z</updated>
+    <updated>2017-04-17T12:57:30.235Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="高性能Mysql读书笔记"><a href="#高性能Mysql读书笔记" class="headerlink" title="高性能Mysql读书笔记"></a>高性能Mysql读书笔记</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><p>###　Mysql逻辑架构<br><img src="/uploads/images/mysql_logicstructure.png" class="full-image"></p>
+    <content type="html"><![CDATA[<h1 id="高性能Mysql读书笔记"><a href="#高性能Mysql读书笔记" class="headerlink" title="高性能Mysql读书笔记"></a>高性能Mysql读书笔记</h1><h2 id="Chapter1"><a href="#Chapter1" class="headerlink" title="Chapter1"></a>Chapter1</h2><h3 id="Mysql逻辑架构"><a href="#Mysql逻辑架构" class="headerlink" title="Mysql逻辑架构"></a>Mysql逻辑架构</h3><p><img src="/uploads/images/mysql_logicstructure.png">  </p>
 <h3 id="存储引擎的选择"><a href="#存储引擎的选择" class="headerlink" title="存储引擎的选择"></a>存储引擎的选择</h3><ul>
 <li><strong>事务</strong><br>  如果应用需要事务支持，InnoDB(或者XtraDB)是目前最稳定并且经过验证的选择。如果不需要事务，并且主要是SELECT和INSERT操作，那么MyISAM是不错的选择。一般日志型的应用比较符合这一特性.</li>
 <li><strong>备份</strong><br>  备份的需求也会影响存储引擎的选择。如果可以定期地关闭服务器来执行备份，那么备份的因素可以忽略。反之，如果需要在线热备份，那么选择InnoDB就是基本的要求.</li>
