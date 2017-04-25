@@ -114,7 +114,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/13/learnNgnix/index.html">
 <meta property="og:site_name" content="fubst0318">
 <meta property="og:description" content="Begin to Learn Ngnix记录个人学习Ngnix历程 Windows下的Ngnix启动的一个问题80端口可能会被占用个人解决方法：nginx.conf中的listen 80;直接调整为listen 9000;  目前学习到的Ngnix中的基本命令查看进程  tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;安全关闭  nginx -s qu">
-<meta property="og:updated_time" content="2017-04-13T12:24:17.804Z">
+<meta property="og:updated_time" content="2017-04-25T09:02:55.094Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learnNgnix">
 <meta name="twitter:description" content="Begin to Learn Ngnix记录个人学习Ngnix历程 Windows下的Ngnix启动的一个问题80端口可能会被占用个人解决方法：nginx.conf中的listen 80;直接调整为listen 9000;  目前学习到的Ngnix中的基本命令查看进程  tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;安全关闭  nginx -s qu">
@@ -435,6 +435,9 @@
 <li><p>目前学习到的Ngnix中的基本命令<br>查看进程  <code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code><br>安全关闭  <code>nginx -s quit</code><br>运行启动  <code>start nginx</code></p>
 </li>
 </ol>
+<h2 id="Linux-Centos-问题解决指南"><a href="#Linux-Centos-问题解决指南" class="headerlink" title="Linux(Centos)问题解决指南"></a>Linux(Centos)问题解决指南</h2><ol>
+<li>关于nginx的启动问题<br> nginx的启动命令是：<code>/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</code><br> -c制定配置文件的路径，不加-nginx会自动加载默认路径的配置文件。</li>
+</ol>
 <p>学习资源：<br><a href="http://tengine.taobao.org/book/" target="_blank" rel="external">nginx平台初探</a></p>
 
       
@@ -701,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Begin-to-Learn-Ngnix"><span class="nav-number">1.</span> <span class="nav-text">Begin to Learn Ngnix</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#记录个人学习Ngnix历程"><span class="nav-number">1.1.</span> <span class="nav-text">记录个人学习Ngnix历程</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Begin-to-Learn-Ngnix"><span class="nav-number">1.</span> <span class="nav-text">Begin to Learn Ngnix</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#记录个人学习Ngnix历程"><span class="nav-number">1.1.</span> <span class="nav-text">记录个人学习Ngnix历程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-Centos-问题解决指南"><span class="nav-number">1.2.</span> <span class="nav-text">Linux(Centos)问题解决指南</span></a></li></ol></li></ol></div>
             
 
           </div>
