@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-17T12:57:30.235Z</updated>
+  <updated>2017-06-13T07:56:39.365Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,87 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript知识点</title>
+    <link href="http://yoursite.com/2017/06/10/JavaScript%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>http://yoursite.com/2017/06/10/JavaScript知识点/</id>
+    <published>2017-06-10T02:24:11.000Z</published>
+    <updated>2017-06-13T07:56:39.365Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="待提升知识点"><a href="#待提升知识点" class="headerlink" title="待提升知识点"></a>待提升知识点</h3><ul>
+<li><code>call</code>以及<code>apply</code>函数方法的更多应用</li>
+</ul>
+<h3 id="强化知识点"><a href="#强化知识点" class="headerlink" title="强化知识点"></a>强化知识点</h3><ul>
+<li><p><code>html</code>的<code>name</code>属性<br>  区别于id,name属性的值不是必须唯一。<br>  和id不一样，name属性只在少数HTML元素中有效。包括表单、表单元素、<code>&lt;iframe&gt;</code>和<code>&lt;img&gt;</code>元素。<br>  基于name属性的值选取HTML元素，可以使用Document对象的getElementsByName()方法：<br>  <code>var radiobuttos = document.getElementByName(&quot;favorite_color&quot;);</code></p>
+</li>
+<li><p>通过标签名获取元素<br>  例子：<code>var spans= document.getElementByTagName(&quot;span&quot;);</code><br>  该方法返回的是一个NodeList对象 所以选取第一个<code>&lt;p&gt;</code>元素的方法为 <code>var firstpara = document.getElementByTagName(&quot;p&quot;)[0];</code></p>
+</li>
+<li><p>HTML元素<br>  <code>&lt;a&gt;</code>代表超链接,href属性值为链接地址</p>
+</li>
+<li><p>CSS 知识点</p>
+<ol>
+<li>css外文件引入<br>例子: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyles.css&quot; type=&quot;text/css&quot;&gt;</code></li>
+<li>元素可见性设置<br>影响文档可见性的两个属性:<code>visibility</code>和<code>display</code>。前者当值设置为<code>hidden</code>时，不显示。<code>display</code>属性更加通用。指定元素是否为块状元素、内联元素、列表项等。如果<code>display</code>设置为<code>none</code>,受影响的元素将不显示，甚至根本没有布局。<br><code>visibility</code>和<code>display</code>属性之间的差别可以从他们对使用静态者相当定位的元素的影响中看到。对于一个常规布局流中的元素，设置<code>visibility</code>属性为<code>hidden</code>使得元素不可见，但是在文档布局中仍保留了空间。类似的元素可以重复隐藏和显示而不改变文档布局。但是，如果元素的<code>display</code>属性设置为<code>none</code>,在文档布局中不再给它分配空间，它各边的元素会合拢，就当它从来不存在。例如，在创建展开和折叠轮廓的效果时，<code>display</code>属性很有用。</li>
+<li>脚本化内联样式<br>脚本化CSS最直截了当的方法就是更改单独文档元素的<code>style</code>属性。类似大多数HTML属性，style属性也是元素对象的属性，它可以在Javascript中操作。但是style属性不同寻常：它的值不是字符串，而是一个CSSStyleDeclartation对象。该style对象的JavaScript属性代表了HTML代码中通过style指定的CSS属性。<br>例如：让元素e的文本变成大号、加粗和蓝色，可以使用如下代码设置font-size\font-weight和color等样式属性对应的JavaScript属性.<br><code>e.style.fontSize=&quot;24pt&quot;; e.style.fontWeight=&quot;bold&quot;; e.style.color=&quot;blue&quot;;</code><br>定位属性需要包含单位。因此，如下代码是错误的：<br><code>e.style.left=300;</code> //错误：是数字不是字符串<br><code>e.style.left=&quot;300&quot;;</code> //错误：缺少单位<br><code>e.style.left=&quot;300px&quot;;</code><br>有时，作为单个字符串值来设置或查询元素的内联样式反而比作为CSSStyleDeclaration对象更为简单。为此，可以使用元素的getAttribute()和setAttribute()方法或CSSStyleDeclaration对象的cssText属性来实现：<br>// 两者都可设置e的样式属性为字符串s<br><code>e.setAttribute(&quot;style&quot;,s);  e.style.cssText=s;</code><br>// 两者都可查询元素的内联样式<br><code>s=e.getAttribute(&quot;style&quot;);s=e.style.cssText;</code></li>
+</ol>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;待提升知识点&quot;&gt;&lt;a href=&quot;#待提升知识点&quot; class=&quot;headerlink&quot; title=&quot;待提升知识点&quot;&gt;&lt;/a&gt;待提升知识点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;call&lt;/code&gt;以及&lt;code&gt;apply&lt;/code&gt;函数方法的更多应用&lt;/
+    
+    </summary>
+    
+      <category term="大前端" scheme="http://yoursite.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>libuv入门</title>
+    <link href="http://yoursite.com/2017/05/12/libuv%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2017/05/12/libuv入门/</id>
+    <published>2017-05-12T13:21:07.000Z</published>
+    <updated>2017-05-12T13:21:07.708Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://yoursite.com/2017/04/29/Linux/"/>
+    <id>http://yoursite.com/2017/04/29/Linux/</id>
+    <published>2017-04-29T02:46:54.000Z</published>
+    <updated>2017-04-29T02:48:45.226Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux的常用命令"><a href="#Linux的常用命令" class="headerlink" title="Linux的常用命令"></a>Linux的常用命令</h1><ul>
+<li>观察系统所有的程序数据 <code>ps aux</code></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Linux的常用命令&quot;&gt;&lt;a href=&quot;#Linux的常用命令&quot; class=&quot;headerlink&quot; title=&quot;Linux的常用命令&quot;&gt;&lt;/a&gt;Linux的常用命令&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;观察系统所有的程序数据 &lt;code&gt;ps aux&lt;/code&gt;&lt;
+    
+    </summary>
+    
+      <category term="系统管理" scheme="http://yoursite.com/categories/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>mysql读书笔记</title>
@@ -75,16 +156,19 @@
     <link href="http://yoursite.com/2017/04/13/learnNgnix/"/>
     <id>http://yoursite.com/2017/04/13/learnNgnix/</id>
     <published>2017-04-13T11:49:16.000Z</published>
-    <updated>2017-04-25T09:02:55.094Z</updated>
+    <updated>2017-05-12T13:21:47.976Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Begin-to-Learn-Ngnix"><a href="#Begin-to-Learn-Ngnix" class="headerlink" title="Begin to Learn Ngnix"></a>Begin to Learn Ngnix</h1><h2 id="记录个人学习Ngnix历程"><a href="#记录个人学习Ngnix历程" class="headerlink" title="记录个人学习Ngnix历程"></a>记录个人学习Ngnix历程</h2><ol>
 <li><p>Windows下的Ngnix启动的一个问题<br>80端口可能会被占用<br>个人解决方法：<code>nginx.conf</code>中的<code>listen 80;</code>直接调整为<code>listen 9000;</code></p>
 </li>
-<li><p>目前学习到的Ngnix中的基本命令<br>查看进程  <code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code><br>安全关闭  <code>nginx -s quit</code><br>运行启动  <code>start nginx</code></p>
+<li><p>目前学习到的Ngnix中的基本命令<br>查看进程  <code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code><br>优雅安全关闭  <code>/usr/local/nginx/sbin/nginx -s quit</code><br>运行启动  <code>start nginx</code></p>
 </li>
 </ol>
 <h2 id="Linux-Centos-问题解决指南"><a href="#Linux-Centos-问题解决指南" class="headerlink" title="Linux(Centos)问题解决指南"></a>Linux(Centos)问题解决指南</h2><ol>
-<li>关于nginx的启动问题<br> nginx的启动命令是：<code>/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</code><br> -c制定配置文件的路径，不加-nginx会自动加载默认路径的配置文件。</li>
+<li><p>关于nginx的启动问题<br> nginx的启动命令是：<code>/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf</code><br> -c制定配置文件的路径，不加-nginx会自动加载默认路径的配置文件。</p>
+</li>
+<li><p>查看Ngnix的进程号<br> <code>ps -ef | grep ngnix</code></p>
+</li>
 </ol>
 <p>学习资源：<br><a href="http://tengine.taobao.org/book/" target="_blank" rel="external">nginx平台初探</a></p>
 ]]></content>
