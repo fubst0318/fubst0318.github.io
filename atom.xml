@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-13T07:56:39.365Z</updated>
+  <updated>2017-06-18T22:50:50.358Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>css知识点一览</title>
+    <link href="http://yoursite.com/2017/06/19/css%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%80%E8%A7%88/"/>
+    <id>http://yoursite.com/2017/06/19/css知识点一览/</id>
+    <published>2017-06-18T22:50:50.000Z</published>
+    <updated>2017-06-18T22:50:50.358Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>知识点</title>
+    <link href="http://yoursite.com/2017/06/15/HTTP%E5%8D%8F%E8%AE%AE%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    <id>http://yoursite.com/2017/06/15/HTTP协议知识点/</id>
+    <published>2017-06-15T02:37:10.000Z</published>
+    <updated>2017-06-16T06:42:09.151Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="强化知识点"><a href="#强化知识点" class="headerlink" title="强化知识点"></a>强化知识点</h3><ul>
+<li><p>HEAD 请求方法<br>  只请求页面的首部</p>
+</li>
+<li><p>POST 和 PUT 方法区别<br>  PUT方法是幂等的<br>  POST方法不幂等。</p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;强化知识点&quot;&gt;&lt;a href=&quot;#强化知识点&quot; class=&quot;headerlink&quot; title=&quot;强化知识点&quot;&gt;&lt;/a&gt;强化知识点&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;HEAD 请求方法&lt;br&gt;  只请求页面的首部&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;POST 和 P
+    
+    </summary>
+    
+      <category term="大前端" scheme="http://yoursite.com/categories/%E5%A4%A7%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="HTTP" scheme="http://yoursite.com/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript知识点</title>
     <link href="http://yoursite.com/2017/06/10/JavaScript%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <id>http://yoursite.com/2017/06/10/JavaScript知识点/</id>
     <published>2017-06-10T02:24:11.000Z</published>
-    <updated>2017-06-13T07:56:39.365Z</updated>
+    <updated>2017-06-15T21:58:36.536Z</updated>
     
     <content type="html"><![CDATA[<h3 id="待提升知识点"><a href="#待提升知识点" class="headerlink" title="待提升知识点"></a>待提升知识点</h3><ul>
 <li><code>call</code>以及<code>apply</code>函数方法的更多应用</li>
@@ -36,7 +81,15 @@
 <ol>
 <li>css外文件引入<br>例子: <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;mystyles.css&quot; type=&quot;text/css&quot;&gt;</code></li>
 <li>元素可见性设置<br>影响文档可见性的两个属性:<code>visibility</code>和<code>display</code>。前者当值设置为<code>hidden</code>时，不显示。<code>display</code>属性更加通用。指定元素是否为块状元素、内联元素、列表项等。如果<code>display</code>设置为<code>none</code>,受影响的元素将不显示，甚至根本没有布局。<br><code>visibility</code>和<code>display</code>属性之间的差别可以从他们对使用静态者相当定位的元素的影响中看到。对于一个常规布局流中的元素，设置<code>visibility</code>属性为<code>hidden</code>使得元素不可见，但是在文档布局中仍保留了空间。类似的元素可以重复隐藏和显示而不改变文档布局。但是，如果元素的<code>display</code>属性设置为<code>none</code>,在文档布局中不再给它分配空间，它各边的元素会合拢，就当它从来不存在。例如，在创建展开和折叠轮廓的效果时，<code>display</code>属性很有用。</li>
-<li>脚本化内联样式<br>脚本化CSS最直截了当的方法就是更改单独文档元素的<code>style</code>属性。类似大多数HTML属性，style属性也是元素对象的属性，它可以在Javascript中操作。但是style属性不同寻常：它的值不是字符串，而是一个CSSStyleDeclartation对象。该style对象的JavaScript属性代表了HTML代码中通过style指定的CSS属性。<br>例如：让元素e的文本变成大号、加粗和蓝色，可以使用如下代码设置font-size\font-weight和color等样式属性对应的JavaScript属性.<br><code>e.style.fontSize=&quot;24pt&quot;; e.style.fontWeight=&quot;bold&quot;; e.style.color=&quot;blue&quot;;</code><br>定位属性需要包含单位。因此，如下代码是错误的：<br><code>e.style.left=300;</code> //错误：是数字不是字符串<br><code>e.style.left=&quot;300&quot;;</code> //错误：缺少单位<br><code>e.style.left=&quot;300px&quot;;</code><br>有时，作为单个字符串值来设置或查询元素的内联样式反而比作为CSSStyleDeclaration对象更为简单。为此，可以使用元素的getAttribute()和setAttribute()方法或CSSStyleDeclaration对象的cssText属性来实现：<br>// 两者都可设置e的样式属性为字符串s<br><code>e.setAttribute(&quot;style&quot;,s);  e.style.cssText=s;</code><br>// 两者都可查询元素的内联样式<br><code>s=e.getAttribute(&quot;style&quot;);s=e.style.cssText;</code></li>
+<li>脚本化内联样式<br>脚本化CSS最直截了当的方法就是更改单独文档元素的<code>style</code>属性。类似大多数HTML属性，style属性也是元素对象的属性，它可以在Javascript中操作。但是style属性不同寻常：它的值不是字符串，而是一个CSSStyleDeclartation对象。该style对象的JavaScript属性代表了HTML代码中通过style指定的CSS属性。<br>例如：让元素e的文本变成大号、加粗和蓝色，可以使用如下代码设置font-size\font-weight和color等样式属性对应的JavaScript属性.<br><code>e.style.fontSize=&quot;24pt&quot;; e.style.fontWeight=&quot;bold&quot;; e.style.color=&quot;blue&quot;;</code><br>定位属性需要包含单位。因此，如下代码是错误的：<br><code>e.style.left=300;</code> //错误：是数字不是字符串<br><code>e.style.left=&quot;300&quot;;</code> //错误：缺少单位<br><code>e.style.left=&quot;300px&quot;;</code><br>有时，作为单个字符串值来设置或查询元素的内联样式反而比作为CSSStyleDeclaration对象更为简单。为此，可以使用元素的getAttribute()和setAttribute()方法或CSSStyleDeclaration对象的cssText属性来实现：<br>// 两者都可设置e的样式属性为字符串s<br><code>e.setAttribute(&quot;style&quot;,s);  e.style.cssText=s;</code><br>// 两者都可查询元素的内联样式<br><code>s=e.getAttribute(&quot;style&quot;);  s=e.style.cssText;</code></li>
+</ol>
+</li>
+<li><p>jQuery知识点  </p>
+<ol>
+<li><p>获取和设置HTML属性<br><code>attr()</code>方法是jQuery中用于HTML属性的getter/setter。该方法处理浏览器的兼容性和一些特殊情况，还让HTML属性名和JavaScript属性名可以等同使用(当两者存在差异时)。例如，可以使用<code>for</code>也可以使用<code>htmlFor</code>，可以使用<code>class</code>也可以使用<code>className</code>。一个相关函数是<code>removeAttr()</code>,可用来从所有选中元素中移除某个属性。</p>
+</li>
+<li><p>获取和设置HTML表单值<br><code>val()</code>方法用来设置和获取HTML表单元素的value属性，还可以获取和设置复选框、单选按钮以及<code>&lt;select&gt;</code>元素的选中状态:<br><code>$(&quot;#surname&quot;).val()</code> //获取 surname 文本域的值<br><code>$(#usstate).val()</code> // 从<code>&lt;select&gt;</code>中获取单一值<br><code>$(&quot;#email&quot;).val(&quot;Invalid email address&quot;)</code> //给文本域设置值<br><code>$(&quot;input:checkbox&quot;).val([&quot;opt1&quot;,&quot;opt2&quot;])</code> //选中带有这些名字或值的复选框  </p>
+</li>
 </ol>
 </li>
 </ul>
