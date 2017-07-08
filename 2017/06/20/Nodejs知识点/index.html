@@ -107,17 +107,17 @@
 
 
 
-<meta name="description" content="生命不息，奋斗不止！">
+<meta name="description" content="创建事件发射器2种实现方法，util.inherits(constructor,superConstructor)或者使用ES6的class和extends关键字。使用ES6实现的具体实例:   1234567891011121314const EventEmitter = require(&apos;events&apos;);class MyStream extends EventEmitter&amp;#123;">
 <meta name="keywords" content="Nodejs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nodejs知识点">
 <meta property="og:url" content="http://yoursite.com/2017/06/20/Nodejs知识点/index.html">
 <meta property="og:site_name" content="fubst0318">
-<meta property="og:description" content="生命不息，奋斗不止！">
-<meta property="og:updated_time" content="2017-06-20T11:15:13.671Z">
+<meta property="og:description" content="创建事件发射器2种实现方法，util.inherits(constructor,superConstructor)或者使用ES6的class和extends关键字。使用ES6实现的具体实例:   1234567891011121314const EventEmitter = require(&apos;events&apos;);class MyStream extends EventEmitter&amp;#123;">
+<meta property="og:updated_time" content="2017-06-22T01:47:29.063Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nodejs知识点">
-<meta name="twitter:description" content="生命不息，奋斗不止！">
+<meta name="twitter:description" content="创建事件发射器2种实现方法，util.inherits(constructor,superConstructor)或者使用ES6的class和extends关键字。使用ES6实现的具体实例:   1234567891011121314const EventEmitter = require(&apos;events&apos;);class MyStream extends EventEmitter&amp;#123;">
 
 
 
@@ -429,7 +429,20 @@
       
 
       
-        
+        <ul>
+<li><h1 id="创建事件发射器"><a href="#创建事件发射器" class="headerlink" title="创建事件发射器"></a>创建事件发射器</h1><p>2种实现方法，<code>util.inherits(constructor,superConstructor)</code>或者使用ES6的<code>class</code>和<code>extends</code>关键字。<br>使用ES6实现的具体实例:  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> EventEmitter = <span class="built_in">require</span>(<span class="string">'events'</span>);</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyStream</span> <span class="keyword">extends</span> <span class="title">EventEmitter</span></span>&#123;</div><div class="line">    write(data) &#123;</div><div class="line">        <span class="keyword">this</span>.emit(<span class="string">"data"</span>,data);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> mystream = <span class="keyword">new</span> MyStream();</div><div class="line">mystream.on(<span class="string">"data"</span>,(data)=&gt;&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">`接收的数据: "<span class="subst">$&#123;data&#125;</span>"`</span>);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">mystream.write(<span class="string">"使用 ES6"</span>)；</div></pre></td></tr></table></figure>
+</li>
+<li><h1 id="fs-模块"><a href="#fs-模块" class="headerlink" title="fs 模块"></a>fs 模块</h1></li>
+</ul>
+<ul>
+<li><h1 id="NODE中的全局变量"><a href="#NODE中的全局变量" class="headerlink" title="NODE中的全局变量"></a>NODE中的全局变量</h1><ol>
+<li>process对象</li>
+<li></li>
+</ol>
+</li>
+</ul>
+
       
     </div>
 
@@ -549,8 +562,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/images/avatar.jpg"
@@ -671,6 +693,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建事件发射器"><span class="nav-number">1.</span> <span class="nav-text">创建事件发射器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#fs-模块"><span class="nav-number">2.</span> <span class="nav-text">fs 模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#NODE中的全局变量"><span class="nav-number">3.</span> <span class="nav-text">NODE中的全局变量</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

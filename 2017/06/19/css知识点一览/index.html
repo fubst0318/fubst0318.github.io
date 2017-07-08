@@ -114,7 +114,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/19/css知识点一览/index.html">
 <meta property="og:site_name" content="fubst0318">
 <meta property="og:description" content="盒模型概述  内边距出现在内容区域的周围。如果在元素上添加背景，那么背景会应用于由内容和内边距组成的区域。因此，我们常常使用内边距在内容周围创建一个隔离带，使内容不会与背景混在一起。添加边框会在内边距的区域外加一条线。这条线可以有多种样式，比如实线、虚线或点线。在边框外边的是外边距。外边距是透明的。一般使用它控制元素之间的间隔。  在CSS中，width和height指的是内容区域的宽度和高度。">
-<meta property="og:updated_time" content="2017-06-21T12:36:33.196Z">
+<meta property="og:updated_time" content="2017-07-07T23:38:33.672Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css知识点一览">
 <meta name="twitter:description" content="盒模型概述  内边距出现在内容区域的周围。如果在元素上添加背景，那么背景会应用于由内容和内边距组成的区域。因此，我们常常使用内边距在内容周围创建一个隔离带，使内容不会与背景混在一起。添加边框会在内边距的区域外加一条线。这条线可以有多种样式，比如实线、虚线或点线。在边框外边的是外边距。外边距是透明的。一般使用它控制元素之间的间隔。  在CSS中，width和height指的是内容区域的宽度和高度。">
@@ -486,6 +486,36 @@
 </li>
 <li><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>  CSS字体处理中最复杂的部分为字体系列(font-family)匹配和字体加粗(font-weight)匹配，其次是字体大小(font-size)计算。<br>  字体样式的所有这些方面都集中到一个属性，即font。  </p>
 </li>
+<li><h1 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h1><ol>
+<li>缩进文本<br>使用<code>text-indent</code>属性,例如:<code>p {text-indent:3em; }</code> </li>
+<li>垂直对齐文本<br>使用<code>vertical-align</code>属性，但该属性只应用于行内元素和替换元素，如图像和表单输入元素。<code>vertical-align</code>属性不能继承。</li>
+<li>文本转换<br>使用<code>text-transform</code>属性，调整文本大小写。具体的值包括:<code>uppercase</code>,<code>lowercase</code>,<code>capitalize</code>,<code>none</code>,<code>inherit</code>   </li>
+<li>文本装饰<br>可选值:<code>none || underline || overline || line-through || blink || inherit</code>。</li>
+</ol>
+</li>
+<li><h1 id="基本视觉格式化"><a href="#基本视觉格式化" class="headerlink" title="基本视觉格式化"></a>基本视觉格式化</h1><ol>
+<li>块级元素声明<br>通过声明<code>display:block</code>，可以让元素生成块级框。  </li>
+<li>行内元素<br>通过声明<code>display:inline</code>,可以让元素生成一个行内框。  </li>
+<li>改变元素显示<br><code>display</code>属性，包括的值有<code>inline || block || run-in</code>等。<br>其中,<code>run-in</code>值，可以使某些块级元素成为下一个元素的行内部分。  </li>
+</ol>
+</li>
+<li><h1 id="颜色和背景"><a href="#颜色和背景" class="headerlink" title="颜色和背景"></a>颜色和背景</h1><ol>
+<li>使用背景图像<br>使用属性<code>background-image</code>属性。允许向任何元素应用背景图像，可以是块级元素也可以是行内元素。当然，大多数背景都应用到body元素中。<br>有方向的平铺，使用<code>background-repeat</code>属性，该属性共有如下值,<code>repeat | repeat-x | repeat-y | no-repeat | inherit</code><br>背景定位，使用<code>background-position</code>属性，代表性的值包括<code>left | center | right | &lt;length&gt; | &lt;percentage&gt;</code>等。<br>使用属性<code>background-attachment</code>，可以声明原图像相对于可视区是固定的，不受滚动影响。该属性的值包括<code>scroll | fixed | inherit</code>。</li>
+</ol>
+</li>
+<li><h1 id="浮动和定位"><a href="#浮动和定位" class="headerlink" title="浮动和定位"></a>浮动和定位</h1><ol>
+<li>浮动使用属性<code>float</code>实现<br><code>float</code>属性的值包括<code>left | right | none |inherit</code>。<br>浮动元素的包含块是其最近的块级祖先元素。<br>浮动元素会生成一个块级框，不论元素本身是什么。</li>
+</ol>
+</li>
+<li><h1 id="表布局"><a href="#表布局" class="headerlink" title="表布局"></a>表布局</h1><ol>
+<li>表单元格边框<br>可使用属性<code>border-collapse</code>来在分隔边框模型和合并边框模型中进行选择。<br><code>border-collapse</code>属性值包括<code>collapse</code>和<code>separate</code>。其中前者是合并边框，后者是分隔模型。</li>
+</ol>
+</li>
+<li><h1 id="列表项"><a href="#列表项" class="headerlink" title="列表项"></a>列表项</h1><ol>
+<li>使用属性<code>list-style-type</code>可改变列表项的标志类型。<br>比如，常见的值包括：<code>disc</code>、<code>circle</code>、<code>square</code>、<code>decimal</code>等，默认的为前者。</li>
+<li>列表项图像<br>若希望将列表的常规标志改为图像，则可以使用<code>list-style-image</code>属性。<br>举例:<code>ul li {list-style-image:url(ohio.gif);}</code><br>通常可以提供一个作为“后路”的标志类型来应付意外情况，如图像未能加载、被破坏或者是某种用户代理无法显示的格式等。<br>举例：<code>ul li {list-style-image:url(ohio.gif);list-style-type:square;}</code></li>
+</ol>
+</li>
 </ul>
 
       
@@ -752,7 +782,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#盒模型概述"><span class="nav-number">1.</span> <span class="nav-text">盒模型概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三种定位模型"><span class="nav-number">2.</span> <span class="nav-text">三种定位模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择器"><span class="nav-number">3.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">4.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#层叠规则"><span class="nav-number">5.</span> <span class="nav-text">层叠规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相对长度单位"><span class="nav-number">6.</span> <span class="nav-text">相对长度单位</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体"><span class="nav-number">7.</span> <span class="nav-text">字体</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#盒模型概述"><span class="nav-number">1.</span> <span class="nav-text">盒模型概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三种定位模型"><span class="nav-number">2.</span> <span class="nav-text">三种定位模型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#选择器"><span class="nav-number">3.</span> <span class="nav-text">选择器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继承"><span class="nav-number">4.</span> <span class="nav-text">继承</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#层叠规则"><span class="nav-number">5.</span> <span class="nav-text">层叠规则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#相对长度单位"><span class="nav-number">6.</span> <span class="nav-text">相对长度单位</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字体"><span class="nav-number">7.</span> <span class="nav-text">字体</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本属性"><span class="nav-number">8.</span> <span class="nav-text">文本属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基本视觉格式化"><span class="nav-number">9.</span> <span class="nav-text">基本视觉格式化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#颜色和背景"><span class="nav-number">10.</span> <span class="nav-text">颜色和背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮动和定位"><span class="nav-number">11.</span> <span class="nav-text">浮动和定位</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#表布局"><span class="nav-number">12.</span> <span class="nav-text">表布局</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列表项"><span class="nav-number">13.</span> <span class="nav-text">列表项</span></a></li></ol></div>
             
 
           </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-06-20T11:15:13.671Z</updated>
+  <updated>2017-06-22T01:47:29.063Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,27 @@
     <link href="http://yoursite.com/2017/06/20/Nodejs%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
     <id>http://yoursite.com/2017/06/20/Nodejs知识点/</id>
     <published>2017-06-20T07:09:44.000Z</published>
-    <updated>2017-06-20T11:15:13.671Z</updated>
+    <updated>2017-06-22T01:47:29.063Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li><h1 id="创建事件发射器"><a href="#创建事件发射器" class="headerlink" title="创建事件发射器"></a>创建事件发射器</h1><p>2种实现方法，<code>util.inherits(constructor,superConstructor)</code>或者使用ES6的<code>class</code>和<code>extends</code>关键字。<br>使用ES6实现的具体实例:  </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> EventEmitter = <span class="built_in">require</span>(<span class="string">'events'</span>);</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyStream</span> <span class="keyword">extends</span> <span class="title">EventEmitter</span></span>&#123;</div><div class="line">    write(data) &#123;</div><div class="line">        <span class="keyword">this</span>.emit(<span class="string">"data"</span>,data);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> mystream = <span class="keyword">new</span> MyStream();</div><div class="line">mystream.on(<span class="string">"data"</span>,(data)=&gt;&#123;</div><div class="line">      <span class="built_in">console</span>.log(<span class="string">`接收的数据: "<span class="subst">$&#123;data&#125;</span>"`</span>);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">mystream.write(<span class="string">"使用 ES6"</span>)；</div></pre></td></tr></table></figure>
+</li>
+<li><h1 id="fs-模块"><a href="#fs-模块" class="headerlink" title="fs 模块"></a>fs 模块</h1></li>
+</ul>
+<ul>
+<li><h1 id="NODE中的全局变量"><a href="#NODE中的全局变量" class="headerlink" title="NODE中的全局变量"></a>NODE中的全局变量</h1><ol>
+<li>process对象</li>
+<li></li>
+</ol>
+</li>
+</ul>
+]]></content>
     
     <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;创建事件发射器&quot;&gt;&lt;a href=&quot;#创建事件发射器&quot; class=&quot;headerlink&quot; title=&quot;创建事件发射器&quot;&gt;&lt;/a&gt;创建事件发射器&lt;/h1&gt;&lt;p&gt;2种实现方法，&lt;code&gt;util.inherits(constructor,su
     
     </summary>
     
@@ -38,7 +56,7 @@
     <link href="http://yoursite.com/2017/06/19/css%E7%9F%A5%E8%AF%86%E7%82%B9%E4%B8%80%E8%A7%88/"/>
     <id>http://yoursite.com/2017/06/19/css知识点一览/</id>
     <published>2017-06-18T22:50:50.000Z</published>
-    <updated>2017-06-21T12:36:33.196Z</updated>
+    <updated>2017-07-07T23:38:33.672Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li><h1 id="盒模型概述"><a href="#盒模型概述" class="headerlink" title="盒模型概述"></a>盒模型概述</h1><p>  内边距出现在内容区域的周围。如果在元素上添加背景，那么背景会应用于由内容和内边距组成的区域。因此，我们常常使用内边距在内容周围创建一个隔离带，使内容不会与背景混在一起。添加边框会在内边距的区域外加一条线。这条线可以有多种样式，比如实线、虚线或点线。在边框外边的是外边距。外边距是透明的。一般使用它控制元素之间的间隔。<br>  在CSS中，<code>width</code>和<code>height</code>指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。假设框的边个边上有10像素的外边距和5像素的内边距，如果希望这个框达到100像素宽，就需要将内容的宽度设置为70像素。<br>  内边距、边框和外边距可以应用于一个元素的所有边，也可以应用于单独的边。外边距还可以是负值，这可以用在多种技术中。</p>
@@ -96,6 +114,36 @@
 </ol>
 </li>
 <li><h1 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h1><p>  CSS字体处理中最复杂的部分为字体系列(font-family)匹配和字体加粗(font-weight)匹配，其次是字体大小(font-size)计算。<br>  字体样式的所有这些方面都集中到一个属性，即font。  </p>
+</li>
+<li><h1 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h1><ol>
+<li>缩进文本<br>使用<code>text-indent</code>属性,例如:<code>p {text-indent:3em; }</code> </li>
+<li>垂直对齐文本<br>使用<code>vertical-align</code>属性，但该属性只应用于行内元素和替换元素，如图像和表单输入元素。<code>vertical-align</code>属性不能继承。</li>
+<li>文本转换<br>使用<code>text-transform</code>属性，调整文本大小写。具体的值包括:<code>uppercase</code>,<code>lowercase</code>,<code>capitalize</code>,<code>none</code>,<code>inherit</code>   </li>
+<li>文本装饰<br>可选值:<code>none || underline || overline || line-through || blink || inherit</code>。</li>
+</ol>
+</li>
+<li><h1 id="基本视觉格式化"><a href="#基本视觉格式化" class="headerlink" title="基本视觉格式化"></a>基本视觉格式化</h1><ol>
+<li>块级元素声明<br>通过声明<code>display:block</code>，可以让元素生成块级框。  </li>
+<li>行内元素<br>通过声明<code>display:inline</code>,可以让元素生成一个行内框。  </li>
+<li>改变元素显示<br><code>display</code>属性，包括的值有<code>inline || block || run-in</code>等。<br>其中,<code>run-in</code>值，可以使某些块级元素成为下一个元素的行内部分。  </li>
+</ol>
+</li>
+<li><h1 id="颜色和背景"><a href="#颜色和背景" class="headerlink" title="颜色和背景"></a>颜色和背景</h1><ol>
+<li>使用背景图像<br>使用属性<code>background-image</code>属性。允许向任何元素应用背景图像，可以是块级元素也可以是行内元素。当然，大多数背景都应用到body元素中。<br>有方向的平铺，使用<code>background-repeat</code>属性，该属性共有如下值,<code>repeat | repeat-x | repeat-y | no-repeat | inherit</code><br>背景定位，使用<code>background-position</code>属性，代表性的值包括<code>left | center | right | &lt;length&gt; | &lt;percentage&gt;</code>等。<br>使用属性<code>background-attachment</code>，可以声明原图像相对于可视区是固定的，不受滚动影响。该属性的值包括<code>scroll | fixed | inherit</code>。</li>
+</ol>
+</li>
+<li><h1 id="浮动和定位"><a href="#浮动和定位" class="headerlink" title="浮动和定位"></a>浮动和定位</h1><ol>
+<li>浮动使用属性<code>float</code>实现<br><code>float</code>属性的值包括<code>left | right | none |inherit</code>。<br>浮动元素的包含块是其最近的块级祖先元素。<br>浮动元素会生成一个块级框，不论元素本身是什么。</li>
+</ol>
+</li>
+<li><h1 id="表布局"><a href="#表布局" class="headerlink" title="表布局"></a>表布局</h1><ol>
+<li>表单元格边框<br>可使用属性<code>border-collapse</code>来在分隔边框模型和合并边框模型中进行选择。<br><code>border-collapse</code>属性值包括<code>collapse</code>和<code>separate</code>。其中前者是合并边框，后者是分隔模型。</li>
+</ol>
+</li>
+<li><h1 id="列表项"><a href="#列表项" class="headerlink" title="列表项"></a>列表项</h1><ol>
+<li>使用属性<code>list-style-type</code>可改变列表项的标志类型。<br>比如，常见的值包括：<code>disc</code>、<code>circle</code>、<code>square</code>、<code>decimal</code>等，默认的为前者。</li>
+<li>列表项图像<br>若希望将列表的常规标志改为图像，则可以使用<code>list-style-image</code>属性。<br>举例:<code>ul li {list-style-image:url(ohio.gif);}</code><br>通常可以提供一个作为“后路”的标志类型来应付意外情况，如图像未能加载、被破坏或者是某种用户代理无法显示的格式等。<br>举例：<code>ul li {list-style-image:url(ohio.gif);list-style-type:square;}</code></li>
+</ol>
 </li>
 </ul>
 ]]></content>
